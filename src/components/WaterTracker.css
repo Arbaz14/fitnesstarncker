@@ -1,0 +1,106 @@
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.tracker-container {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+.tracker-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn-green {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-green:hover {
+  background-color: #218838;
+}
+
+.btn-yellow {
+  background-color: #ffc107;
+}
+
+.btn-red {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-yellow:hover {
+  background-color: #e0a800;
+}
+
+.btn-red:hover {
+  background-color: #c82333;
+}
+
+.total-text {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.input-row input {
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 4px;
+  border: none;
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.text-center {
+  text-align: center;
+}

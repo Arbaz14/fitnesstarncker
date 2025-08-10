@@ -1,0 +1,395 @@
+/* LiveSession.css */
+.livesession-container {
+  font-family: 'Roboto', Arial, sans-serif;
+  max-width: 1000px;
+  margin: 24px auto;
+  padding: 0 16px;
+  background: linear-gradient(to bottom, #1f2937, #111827);
+  min-height: calc(100vh - 48px);
+  border-radius: 16px;
+  color: #f3f4f6;
+}
+
+.livesession-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #dbeafe;
+  text-align: center;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.title-icon {
+  font-size: 2.8rem;
+  color: #60a5fa;
+}
+
+.mode-selection {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.mode-button {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #f3f4f6;
+  background: linear-gradient(to bottom, #4b5563, #374151);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mode-button:hover {
+  background: linear-gradient(to bottom, #60a5fa, #3b82f6);
+  transform: translateY(-2px);
+}
+
+.mode-button.active {
+  background: linear-gradient(to bottom, #60a5fa, #2563eb);
+  transform: scale(1.05);
+}
+
+.session-card {
+  background: #374151;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #dbeafe;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #4b5563;
+  padding-bottom: 8px;
+}
+
+.exercise-selector {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.selector-label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #d1d5db;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.exercise-select {
+  padding: 10px 16px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid #4b5563;
+  background-color: #1f2937;
+  color: #f3f4f6;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 200px;
+}
+
+.exercise-select:focus {
+  outline: none;
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.3);
+}
+
+.exercise-instructions {
+  background: #2d3748;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 20px;
+}
+
+.instructions-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #dbeafe;
+  margin-bottom: 8px;
+}
+
+.exercise-instructions p {
+  font-size: 1rem;
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+.timer-display {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.timer {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #60a5fa;
+  margin-bottom: 16px;
+}
+
+.control-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.control-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.control-button.start {
+  background: linear-gradient(to bottom, #10b981, #059669);
+}
+
+.control-button.start:hover {
+  background: linear-gradient(to bottom, #34d399, #10b981);
+  transform: translateY(-2px);
+}
+
+.control-button.stop {
+  background: linear-gradient(to bottom, #ef4444, #b91c1c);
+}
+
+.control-button.stop:hover {
+  background: linear-gradient(to bottom, #f87171, #ef4444);
+  transform: translateY(-2px);
+}
+
+.control-button.reset {
+  background: linear-gradient(to bottom, #6b7280, #4b5563);
+}
+
+.control-button.reset:hover {
+  background: linear-gradient(to bottom, #9ca3af, #6b7280);
+  transform: translateY(-2px);
+}
+
+.speed-display,
+.current-exercise {
+  font-size: 1.1rem;
+  color: #d1d5db;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.stats-card {
+  background: linear-gradient(to bottom right, #374151, #1f2937);
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 20px;
+}
+
+.stats-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.stat-item {
+  background: #2d3748;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1.1rem;
+  color: #d1d5db;
+  text-align: center;
+}
+
+.stat-item strong {
+  color: #dbeafe;
+  font-weight: 600;
+}
+
+.save-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #f3f4f6;
+  background: linear-gradient(to bottom, #60a5fa, #2563eb);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 24px auto;
+  display: block;
+}
+
+.save-button:hover {
+  background: linear-gradient(to bottom, #93c5fd, #60a5fa);
+  transform: translateY(-2px);
+}
+
+.save-button.disabled {
+  background: #4b5563;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .livesession-title {
+    font-size: 2.2rem;
+  }
+
+  .title-icon {
+    font-size: 2.2rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .mode-button {
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+
+  .selector-label {
+    font-size: 1.1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .exercise-select {
+    width: 100%;
+    font-size: 1rem;
+    min-width: unset;
+  }
+
+  .timer {
+    font-size: 2.5rem;
+  }
+
+  .control-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .speed-display,
+  .current-exercise {
+    font-size: 1rem;
+  }
+
+  .stats-content {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-item {
+    font-size: 1rem;
+  }
+
+  .save-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .livesession-container {
+    padding: 0 12px;
+    margin: 16px auto;
+    border-radius: 12px;
+  }
+
+  .livesession-title {
+    font-size: 1.8rem;
+  }
+
+  .title-icon {
+    font-size: 1.8rem;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .mode-button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .selector-label {
+    font-size: 1rem;
+  }
+
+  .exercise-select {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .exercise-instructions p {
+    font-size: 0.9rem;
+  }
+
+  .timer {
+    font-size: 2rem;
+  }
+
+  .control-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .speed-display,
+  .current-exercise {
+    font-size: 0.9rem;
+  }
+
+  .stat-item {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .save-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}

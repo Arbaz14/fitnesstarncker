@@ -1,0 +1,186 @@
+/* History.css */
+.history-container {
+  font-family: 'Roboto', Arial, sans-serif;
+  max-width: 1000px;
+  margin: 24px auto;
+  padding: 0 16px;
+  background: linear-gradient(to bottom, #1f2937, #111827);
+  min-height: calc(100vh - 48px);
+  border-radius: 16px;
+  color: #f3f4f6;
+}
+
+.history-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #dbeafe;
+  text-align: center;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.title-icon {
+  font-size: 2.8rem;
+  color: #60a5fa;
+}
+
+.no-workouts {
+  font-size: 1.2rem;
+  color: #9ca3af;
+  text-align: center;
+  padding: 20px;
+  background: #2d3748;
+  border-radius: 8px;
+  margin: 0 16px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.date-card {
+  background: #374151;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.date-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #dbeafe;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #4b5563;
+  padding-bottom: 8px;
+}
+
+.workout-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.workout-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #2d3748;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  color: #d1d5db;
+  transition: all 0.3s ease;
+}
+
+.workout-item:hover {
+  background: #4b5563;
+  transform: translateX(5px);
+}
+
+.exercise-name {
+  font-weight: 500;
+  color: #f3f4f6;
+  flex: 1;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .history-title {
+    font-size: 2.2rem;
+  }
+
+  .title-icon {
+    font-size: 2.2rem;
+  }
+
+  .no-workouts {
+    font-size: 1.1rem;
+    margin: 0 12px;
+  }
+
+  .date-card {
+    padding: 16px;
+  }
+
+  .date-title {
+    font-size: 1.6rem;
+  }
+
+  .workout-item {
+    font-size: 1rem;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .exercise-name,
+  .workout-item span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .history-container {
+    padding: 0 12px;
+    margin: 16px auto;
+    border-radius: 12px;
+  }
+
+  .history-title {
+    font-size: 1.8rem;
+  }
+
+  .title-icon {
+    font-size: 1.8rem;
+  }
+
+  .no-workouts {
+    font-size: 1rem;
+    padding: 16px;
+  }
+
+  .date-card {
+    padding: 12px;
+  }
+
+  .date-title {
+    font-size: 1.4rem;
+  }
+
+  .workout-item {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .exercise-name,
+  .workout-item span {
+    font-size: 0.9rem;
+  }
+}

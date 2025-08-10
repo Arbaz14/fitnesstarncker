@@ -1,0 +1,37 @@
+export const exerciseData = {
+  running: { met: 8, fatRatio: 0.2, carbRatio: 0.8, level: 'Intermediate', instructions: 'Maintain an even pace and good posture.', equipment: 'None' },
+  jogging: { met: 7, fatRatio: 0.4, carbRatio: 0.6, level: 'Beginner', instructions: 'Start with a light jog, focus on breathing.', equipment: 'None' },
+  walking: { met: 3.5, fatRatio: 0.6, carbRatio: 0.4, level: 'Beginner', instructions: 'Keep a steady pace and maintain good posture.', equipment: 'None' },
+  stairmaster: { met: 9, fatRatio: 0.19, carbRatio: 0.81, level: 'Intermediate', instructions: 'Use your whole foot and maintain a steady rhythm.', equipment: 'Stairmaster' },
+  boxing: { met: 7.8, fatRatio: 0.374, carbRatio: 0.636, level: 'Intermediate', instructions: 'Keep your guard up and rotate your hips with each punch.', equipment: 'Boxing Gloves' },
+  jumprope: { met: 12.3, fatRatio: 0.14, carbRatio: 0.86, level: 'Advanced', instructions: 'Stay on the balls of your feet and keep your elbows close to your body.' },
+  swimming: { met: 7, fatRatio: 0.66, carbRatio: 0.34, level: 'Intermediate', instructions: 'Focus on proper breathing technique and streamlined body position.', equipment: 'Pool' },
+  hiitBodyweight: { met: 8, fatRatio: 0.13, carbRatio: 0.87, level: 'Intermediate', instructions: 'Maintain proper form even when fatigued, rest as needed.', equipment: 'None' },
+  hiitSprints: { met: 12, fatRatio: 0.03, carbRatio: 0.97, level: 'Advanced', instructions: 'Give maximum effort during work intervals, recover fully between sets.' },
+  kangoo: { met: 9.8, fatRatio: 0.4, carbRatio: 0.6, level: 'Intermediate', instructions: 'Land softly and use the rebound boots to your advantage.' },
+  added20lbsWeightedWalking: { met: 5, fatRatio: 0.7, carbRatio: 0.3, level: 'Intermediate', instructions: 'Distribute weight evenly and maintain proper walking form.' },
+  cycling: { met: 7.5, fatRatio: 0.4, carbRatio: 0.6, level: 'Intermediate', instructions: 'Keep your back straight and pedal with smooth, circular motions.' },
+  elliptical: { met: 5, fatRatio: 0.5, carbRatio: 0.5, level: 'Beginner', instructions: 'Use both arms and legs, maintain an upright posture.' },
+  weightTraining: { met: 3.5, fatRatio: 0.3, carbRatio: 0.7, level: 'Intermediate', instructions: 'Focus on controlled movements and proper form over speed.' },
+  yoga: { met: 2.5, fatRatio: 0.7, carbRatio: 0.3, level: 'Beginner', instructions: 'Focus on breathing and hold poses within your comfort range.' },
+  // Newbie
+  armCircles: { met: 2.0, fatRatio: 0.7, carbRatio: 0.3, level: 'Newbie', instructions: 'Perform slow, controlled arm circles forward and backward.' },
+  legSwings: { met: 2.5, fatRatio: 0.7, carbRatio: 0.3, level: 'Newbie', instructions: 'Swing your legs forward and backward gently.' },
+  // Beginner
+  lightStretching: { met: 2.0, fatRatio: 0.75, carbRatio: 0.25, level: 'Beginner', instructions: 'Hold stretches gently, do not bounce.' },
+  bodyweightSquats: { met: 4.0, fatRatio: 0.5, carbRatio: 0.5, level: 'Beginner', instructions: 'Keep your back straight and chest up.' },
+  dancing: { met: 5.0, fatRatio: 0.5, carbRatio: 0.5, level: 'Beginner', instructions: 'Move to the rhythm, keep your core engaged.' },
+  pilates: { met: 3.0, fatRatio: 0.6, carbRatio: 0.4, level: 'Beginner', instructions: 'Focus on controlled movements and core engagement.' },
+  // Intermediate
+  hiking: { met: 6.0, fatRatio: 0.45, carbRatio: 0.55, level: 'Intermediate', instructions: 'Maintain a steady pace and use your arms for balance.' },
+  rowing: { met: 7.0, fatRatio: 0.35, carbRatio: 0.65, level: 'Intermediate', instructions: 'Keep your back straight and use your legs to power the stroke.' },
+  kickboxing: { met: 10.0, fatRatio: 0.2, carbRatio: 0.8, level: 'Intermediate', instructions: 'Keep your core tight and use powerful punches and kicks.' },
+  lunges: { met: 5.0, fatRatio: 0.4, carbRatio: 0.6, level: 'Intermediate', instructions: 'Step forward and lower your hips until both knees are bent at a 90-degree angle.' },
+  pushups: { met: 8.0, fatRatio: 0.2, carbRatio: 0.8, level: 'Intermediate', instructions: 'Keep your body in a straight line from head to heels.' },
+  // Advanced
+  crossfit: { met: 14.0, fatRatio: 0.1, carbRatio: 0.9, level: 'Advanced', instructions: 'Perform compound movements with intensity.' },
+  rockClimbing: { met: 11.0, fatRatio: 0.25, carbRatio: 0.75, level: 'Advanced', instructions: 'Engage your core and use your legs for power.' },
+  burpees: { met: 10, fatRatio: 0.15, carbRatio: 0.85, level: 'Advanced', instructions: 'Keep your movements explosive and fluid.' },
+  pullups: { met: 10.0, fatRatio: 0.1, carbRatio: 0.9, level: 'Advanced', instructions: 'Pull your chest to the bar, keeping your body tight.' },
+  muscleUps: { met: 15.0, fatRatio: 0.05, carbRatio: 0.95, level: 'Advanced', instructions: 'Combine a pull-up with a dip for a powerful movement.' },
+};
